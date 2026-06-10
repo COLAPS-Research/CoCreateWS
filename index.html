@@ -11,18 +11,18 @@
 </head>
 <body>
 
-<!-- NAV -->
 <nav id="navbar">
   <div class="nav-inner">
-    <a href="#" class="nav-logo">CoCreate</a>
+    <a href="index.html" class="nav-logo">CoCreate</a>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#programme">Programme</a></li>
-      <li><a href="#goals">Goals</a></li>
-      <li><a href="#audience">Audience</a></li>
-      <li><a href="#submit">Submit</a></li>
-      <li><a href="#dates">Timeline</a></li>
-      <li><a href="#partners">Partners</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="programme.html">Programme</a></li>
+      <li><a href="goals.html">Goals</a></li>
+      <li><a href="audience.html">Audience</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
+      <li><a href="organizers.html">Organizers</a></li>
     </ul>
     <button class="hamburger" aria-label="Menu" onclick="document.getElementById('navbar').classList.toggle('menu-open')">
       <span></span><span></span><span></span>
@@ -30,7 +30,6 @@
   </div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-text">
@@ -38,13 +37,24 @@
       <h1>Designing <em>intentional</em> educational hackathons</h1>
       <p class="hero-sub">A half-day workshop introducing the CoCreate framework — a research-grounded resource for planning hackathons that foster creativity and entrepreneurship in higher education.</p>
       <div class="hero-cta">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeGgW_BMmf4bSUdQRjzY2lbDNZL_E448maalf3bhruf2GOUaA/viewform" class="btn btn-register" target="_blank">Register to participate</a>
+        <a href="register.html" class="btn btn-register">Register to participate</a>
         <a href="https://cocreate-project.eu" class="btn btn-secondary" target="_blank">Visit CoCreate ↗</a>
-        <a href="#programme" class="btn btn-secondary">See programme</a>
+        <a href="programme.html" class="btn btn-secondary">See programme</a>
       </div>
     </div>
     <div class="hero-card">
       <div class="hero-card-label">Workshop details</div>
+      <a href="register.html" class="hero-detail hero-detail-link">
+        <div class="hero-detail-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 12 15 15"/>
+          </svg>
+        </div>
+        <div class="hero-detail-text">
+          <h4>Submit your abstract</h4>
+          <p>2–3 page extended abstract · due 14 or 15 Aug 2026</p>
+        </div>
+      </a>
       <div class="hero-detail">
         <div class="hero-detail-icon">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -93,303 +103,6 @@
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="section-inner reveal">
-    <div class="section-label">About the workshop</div>
-    <h2 class="section-title">From ad hoc to intentional</h2>
-    <p class="section-desc">Hackathons have become a global phenomenon in higher education — yet they typically run in parallel to formal curricula, guided by experience rather than research. The CoCreate framework changes that, providing structured guidelines for every design decision educators face.</p>
-    <div class="about-grid">
-      <div class="about-block">
-        <h3>The problem</h3>
-        <p>Existing hackathon guides are domain-specific, experience-based, and focused on engagement rather than learning outcomes. First-time organisers lack practical, research-backed support for educational hackathon design.</p>
-      </div>
-      <div class="about-block">
-        <h3>The framework</h3>
-        <p>CoCreate covers goal-setting, theme selection, team formation, mentoring, ideation methods, stakeholder involvement, curriculum integration, and assessment — grounded in empirical research across three European pilot institutions.</p>
-      </div>
-      <div class="about-block">
-        <h3>Mindful TEL</h3>
-        <p>Aligned with ECTEL 2026's theme of intentionality in learning technology, CoCreate moves beyond the assumption that "hackathons are inherently good" towards evidence-based understanding of when, how, and for whom they work.</p>
-      </div>
-      <div class="about-block">
-        <h3>What you'll take away</h3>
-        <p>A draft hackathon blueprint tailored to your institutional context, familiarity with the CoCreate framework, and membership in a growing community of practice around educational hackathon design.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PROGRAMME -->
-<section id="programme">
-  <div class="section-inner reveal">
-    <div class="section-label">Workshop programme</div>
-    <h2 class="section-title">Four parts, one blueprint</h2>
-    <p class="section-desc">A carefully structured half-day moving from understanding the framework to applying it in your own context.</p>
-    <div class="timeline">
-      <div class="tl-item">
-        <div class="tl-dot">P1</div>
-        <div class="tl-content">
-          <h3>Setting the stage</h3>
-          <div class="tl-duration">30 minutes</div>
-          <p>Welcome and introductions, a concise presentation of the CoCreate project and framework through illustrative examples, and a brief individual reflection on your hackathon-related context or interests.</p>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot">P2</div>
-        <div class="tl-content">
-          <h3>Framework exploration</h3>
-          <div class="tl-duration">45 minutes</div>
-          <p>Facilitated small-group activity analysing a case vignette using the framework's guidelines and decision points. Identify design tensions, trade-offs, and open questions, then share insights in plenary.</p>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot">P3</div>
-        <div class="tl-content">
-          <h3>Blueprint design activity</h3>
-          <div class="tl-duration">75 minutes</div>
-          <p>Work in small groups (3–5) to draft a hackathon blueprint using the CoCreate framework as scaffold. Address key decision points, document choices and rationale, then present in a gallery walk format for cross-group feedback.</p>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot">P4</div>
-        <div class="tl-content">
-          <h3>Synthesis &amp; feedback</h3>
-          <div class="tl-duration">40 minutes</div>
-          <p>Facilitated plenary on shared challenges, lessons, and future directions. Complete a structured feedback instrument on the framework. Learn about the CoCreate community of practice and open invitation to stay engaged.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- GOALS -->
-<section id="goals">
-  <div class="section-inner reveal">
-    <div class="section-label">Workshop goals</div>
-    <h2 class="section-title">What we set out to achieve</h2>
-    <p class="section-desc">Five interconnected goals guiding the workshop design and facilitation.</p>
-    <div class="goals-grid">
-      <div class="goal-card">
-        <div class="goal-num">01</div>
-        <h3>Introduce the framework</h3>
-        <p>Share the CoCreate framework and empirical findings from three-institution pilot implementation with the TEL community.</p>
-      </div>
-      <div class="goal-card">
-        <div class="goal-num">02</div>
-        <h3>Apply to your context</h3>
-        <p>Enable participants to use the framework's guidelines and decision points for their own institutional setting through guided design activities.</p>
-      </div>
-      <div class="goal-card">
-        <div class="goal-num">03</div>
-        <h3>Critical reflection</h3>
-        <p>Foster reflection on challenges and opportunities of integrating hackathons into formal curricula, including assessment, equity, and scalability.</p>
-      </div>
-      <div class="goal-card">
-        <div class="goal-num">04</div>
-        <h3>Collect feedback</h3>
-        <p>Gather structured community feedback to directly inform the final CoCreate framework deliverables.</p>
-      </div>
-      <div class="goal-card">
-        <div class="goal-num">05</div>
-        <h3>Build a network</h3>
-        <p>Create a cross-institutional network of stakeholders interested in educational hackathon design, contributing to the CoCreate community of practice.</p>
-      </div>
-      <div class="goal-card">
-        <div class="goal-num">06</div>
-        <h3>Publish outcomes</h3>
-        <p>Produce a technical report reflecting workshop outputs, including anonymised blueprint examples and synthesis of participant insights.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- AUDIENCE -->
-<section id="audience">
-  <div class="section-inner reveal">
-    <div class="section-label">Who should attend</div>
-    <h2 class="section-title">Designed for educators, researchers &amp; practitioners</h2>
-    <p class="section-desc">No prior hackathon experience required. Come with a course or programme context in mind to use during the design activity.</p>
-    <div class="audience-list">
-      <div class="audience-item">
-        <div class="audience-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/>
-          </svg>
-        </div>
-        <div>
-          <h4>Educators &amp; instructional designers</h4>
-          <p>Those in higher education using project-based learning or considering hackathons as part of formal curricula.</p>
-        </div>
-      </div>
-      <div class="audience-item">
-        <div class="audience-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/>
-          </svg>
-        </div>
-        <div>
-          <h4>TEL Researchers</h4>
-          <p>Researchers in active learning, competence development, learning analytics, and assessment in non-traditional formats.</p>
-        </div>
-      </div>
-      <div class="audience-item">
-        <div class="audience-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
-          </svg>
-        </div>
-        <div>
-          <h4>Educational technologists</h4>
-          <p>Practitioners integrating innovation and entrepreneurship into academic programmes.</p>
-        </div>
-      </div>
-      <div class="audience-item">
-        <div class="audience-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
-          </svg>
-        </div>
-        <div>
-          <h4>Hackathon community</h4>
-          <p>Researchers and practitioners interested in the systematic study and design of educational hackathons.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SUBMIT / PARTICIPATE -->
-<section id="submit">
-  <div class="section-inner reveal">
-    <div class="section-label">How to participate</div>
-    <h2 class="section-title">Register &amp; submit an extended abstract</h2>
-    <p class="section-desc">To take part, register and submit a short extended abstract. Submissions are <em>not</em> competitively reviewed — every abstract from a registered participant is accepted. They simply help us form balanced design groups and tailor the workshop activities to the contexts you bring.</p>
-
-    <div class="submit-grid">
-      <!-- Requirements -->
-      <div class="submit-main">
-        <div class="submit-specs">
-          <div class="submit-spec">
-            <div class="submit-spec-k">Length</div>
-            <div class="submit-spec-v">2–3 pages</div>
-          </div>
-          <div class="submit-spec">
-            <div class="submit-spec-k">Format</div>
-            <div class="submit-spec-v">Springer LNCS — <a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines" target="_blank">template&nbsp;↗</a></div>
-          </div>
-        </div>
-
-        <h3 class="submit-h3">Your abstract should describe</h3>
-        <ul class="submit-list">
-          <li>
-            <span class="submit-list-tag">Context</span>
-            The institutional or course context in which you work, or plan to work, with hackathons.
-          </li>
-          <li>
-            <span class="submit-list-tag">Motivation</span>
-            Your motivation for attending, and the design challenge or question you bring to the workshop.
-          </li>
-          <li>
-            <span class="submit-list-tag">Experience</span>
-            Any prior experience with hackathons or project-based learning (if any).
-          </li>
-        </ul>
-      </div>
-
-      <!-- Action card -->
-      <aside class="submit-card">
-        <div class="submit-card-label">Submission</div>
-        <div class="submit-deadline">
-          <div class="submit-deadline-date">15 Aug 2026</div>
-          <div class="submit-deadline-note">Submission deadline</div>
-        </div>
-        <p class="submit-card-note">Register and submit through a single form. Early registration is encouraged — places are limited to 20 participants.</p>
-        <!-- NOTE: this points to the existing registration form. Replace with the combined registration + submission form URL if you create a separate one. -->
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeGgW_BMmf4bSUdQRjzY2lbDNZL_E448maalf3bhruf2GOUaA/viewform" class="btn btn-register submit-btn" target="_blank">Register &amp; submit ↗</a>
-        <p class="submit-card-fine">All submissions from registered participants are accepted — no competitive review.</p>
-      </aside>
-    </div>
-  </div>
-</section>
-
-<!-- TIMELINE / DATES -->
-<section id="dates">
-  <div class="section-inner reveal">
-    <div class="section-label">Key dates</div>
-    <h2 class="section-title">Important timeline</h2>
-    <p class="section-desc">Mark these dates to stay on track with workshop participation and deliverables.</p>
-    <div class="dates-grid">
-      <div class="date-card">
-        <div class="date-card-date">June 7, 2026</div>
-        <h4>Call for participation</h4>
-        <p>Workshop website published; registration opens via ECTEL channels and CoCreate community.</p>
-      </div>
-      <div class="date-card">
-        <div class="date-card-date">August 15, 2026</div>
-        <h4>Registration closes</h4>
-        <p>Confirmation of participant numbers and submission of extended abstracts.</p>
-      </div>
-      <div class="date-card">
-        <div class="date-card-date">September 1, 2026</div>
-        <h4>Pre-workshop materials</h4>
-        <p>Reading materials and brief contextualisation task dispatched to registered participants.</p>
-      </div>
-      <div class="date-card">
-        <div class="date-card-date">September 15, 2026</div>
-        <h4>Workshop day</h4>
-        <p>Half-day session delivered at ECTEL 2026, Valencia.</p>
-      </div>
-      <div class="date-card">
-        <div class="date-card-date">October 2026</div>
-        <h4>Feedback analysis</h4>
-        <p>Participant feedback integrated into CoCreate framework evaluation report.</p>
-      </div>
-      <div class="date-card">
-        <div class="date-card-date">November 2026</div>
-        <h4>Technical report</h4>
-        <p>Draft of workshop technical report communicated for publication.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PARTNERS -->
-<section id="partners">
-  <div class="section-inner reveal">
-    <div class="section-label">Consortium</div>
-    <h2 class="section-title">The CoCreate partnership</h2>
-    <p class="section-desc">An Erasmus+ Strategic Partnership (KA220-HED) bringing together research and practice across Europe.</p>
-    <div class="partners-grid">
-      <div class="partner-card">
-        <div class="partner-avatar">UDE</div>
-        <h4>University of Duisburg-Essen</h4>
-        <p>Higher education</p>
-        <div class="partner-country">Germany</div>
-      </div>
-      <div class="partner-card">
-        <div class="partner-avatar">AAU</div>
-        <h4>Aalborg University</h4>
-        <p>Higher education</p>
-        <div class="partner-country">Denmark</div>
-      </div>
-      <div class="partner-card">
-        <div class="partner-avatar">TU/e</div>
-        <h4>Eindhoven University of Technology</h4>
-        <p>Higher education</p>
-        <div class="partner-country">Netherlands</div>
-      </div>
-      <div class="partner-card">
-        <div class="partner-avatar">G48</div>
-        <h4>Garage48</h4>
-        <p>Hackathon organisation</p>
-        <div class="partner-country">Estonia</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
 <section class="cta-section">
   <div class="section-inner reveal">
     <h2 class="section-title">Join the workshop</h2>
@@ -401,7 +114,6 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-inner">
     <p>CoCreate · Erasmus+ KA220-HED · <a href="https://cocreate-project.eu" target="_blank">cocreate-project.eu</a></p>

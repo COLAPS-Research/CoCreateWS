@@ -503,3 +503,14 @@ footer p { font-size: 0.8rem; }
   .hero-cta { flex-direction: column; }
   .btn { width: 100%; justify-content: center; }
 }
+
+/* ───── MULTI-PAGE ───── */
+.nav-links a.active { color: var(--forest); font-weight: 600; }
+body.subpage section:first-of-type { padding-top: 8rem; }
+.hero-detail-icon, .hero-detail-text h4 { transition: all 0.3s var(--ease-out); }
+a.hero-detail { text-decoration: none; color: inherit; cursor: pointer; }
+a.hero-detail:hover .hero-detail-text h4 { color: var(--terracotta); }
+a.hero-detail:hover .hero-detail-icon { background: var(--terracotta); color: #fff; }
+@media (max-width: 900px) {
+  body.subpage section:first-of-type { padding-top: 6.5rem; }
+}
